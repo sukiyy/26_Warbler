@@ -22,9 +22,8 @@ export FLASK_ENV=development
 -----------
 
 FLASK_ENV=production python -m unittest test_user_views.py
-AttributeError: 'NoneType' object has no attribute 'likes'
-Ran 5 tests in 0.072s
-FAILED (errors=1)
+Ran 4 tests in 0.072s
+OK
 
 
 FLASK_ENV=production python -m unittest test_message_model.py
