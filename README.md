@@ -19,3 +19,24 @@ python3 seeds.py
 FLASK_ENV=development flask run
 export FLASK_ENV=development
 
+-----------
+
+FLASK_ENV=production python -m unittest test_user_views.py
+AttributeError: 'NoneType' object has no attribute 'likes'
+----------------------------------------------------------------------
+Ran 5 tests in 0.072s
+FAILED (errors=1)
+
+
+FLASK_ENV=production python -m unittest test_message_model.py
+Ran 1 test in 0.023s
+OK
+
+FLASK_ENV=production python -m unittest test_message_views.py
+Ran 1 test in 0.249s
+OK
+
+
+FLASK_ENV=production python -m unittest test_user_model.py
+Ran 1 test in 0.018s
+OK
